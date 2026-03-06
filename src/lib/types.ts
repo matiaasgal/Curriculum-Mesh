@@ -1,19 +1,21 @@
 export type ClassId = string;
 
-export type ClassInfo = {
+export type Course = {
     id: ClassId;
     displayName: string;
-    isApproved: boolean;
     requirements: ClassId[];
-}
+};
 
 export type Semester = {
     id: number;
     displayName: string;
-    classes: ClassInfo[];
-}
+    classes: Course[];
+};
 
 export type Curriculum = {
-    totalSemesters: number;
     semesters: Semester[];
-}
+};
+
+export type UserProgress = {
+  approved: Set<ClassId>;
+};
