@@ -342,7 +342,7 @@ export const curriculum: Curriculum = {
                     id: "electivo5",
                     displayName: "Electivo V",
                     requirements: [
-                        "computacion1"
+                        "electivo4"
                     ]
                 },
                 {
